@@ -1,0 +1,254 @@
+.header-pres{
+    background: var(--bg);
+    color: var(--color2);
+    height: 50vh;
+    padding: 1em 6em;
+}
+.header-pres .banner{
+    display: none;
+}
+.header-pres .heading{
+    height: 100%;
+    width: 65%;
+    /* border: solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header-pres h1, .header-pres div, .header-pres i{
+    color: var(--color2);
+}
+.header-pres h1, .header-pres div{
+    /* border: solid; */
+    width: 100%;
+    /* margin-left: 2em; */
+    /* display: flex; */
+}
+.header-pres h1{
+    /* text-align: center; */
+}
+.header-pres .desc{
+    text-align: justify;
+}
+.header-pres .teacher{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header-pres .teacher img{
+    margin-right: 1.4em;
+    border-radius: 50%;
+}
+.header-pres .price{
+    padding: 0;
+    /* border: solid; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.header-pres .price .true,
+.header-pres .price .reduced{
+    width: max-content;
+    margin: 0 .2em;
+    padding: 0;
+}
+.header-pres .price .true{
+    font-size: 1em;
+    text-decoration:line-through;
+}
+.header-pres .price .reduced{
+    font-size: 2em;
+}
+.header-pres .label,
+.header-pres .label i{
+    color: brown;
+    font-weight: bolder;
+}
+.section-pres{
+    background: var(--color2);
+}
+.section-pres .obj{
+    border: var(--color3) solid .7px;
+    width: 50%;
+    margin: 2em 6em;
+    padding: 1.5em;
+    border-radius: .8em;
+}
+.section-pres .obj ul{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    /* justify-content: space-between; */
+}
+.section-pres .obj li{
+    list-style: none;
+    margin: 1em 0;
+}
+.section-pres .obj li i{
+    color: var(--color1);
+}
+.section-pres .intro, .section-pres .foot{
+    padding: 2em;
+    /* border: solid; */
+    width: 60%;
+}
+.section-pres .intro h2{
+    font-size: 2.4em;
+}
+.section-pres .intro p{
+    text-align: justify;
+    font-size: 1.2em;
+}
+.section-pres .foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-pres .foot button, .header-pres button, .fixed button{
+    font-size: 1.2em;
+    padding: .5em 2em;
+    background: var(--bg2);
+    border: var(--orange1) solid 1px;
+    border-radius: .3em;
+    cursor: pointer;
+    color: var(--color2);
+    font-weight: bold;
+}
+.section-pres .foot button:hover{
+    box-shadow: #000 3px 1px 8px;
+}
+.header-pres button:hover{
+    box-shadow: #fff 3px 1px 8px;
+}
+.fixed{
+    position: fixed;
+    /* border: solid; */
+    width: 30%;
+    height: 80vh;
+    top: 15%;
+    right: 5%;
+    /* background-color: aquamarine; */
+    z-index: 3;
+    background: var(--color2);
+    box-shadow: #000 -2px -2px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fixed .banner img{
+    width: 100%;
+    border-bottom: solid;
+}
+.fixed div{
+    margin: .5em 0;
+    /* border: solid; */
+    width: 85%;
+}
+.fixed .price{
+    /* margin: 1.4em 0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fixed .price .reduced{
+    font-weight: bold;
+    /* margin: 0 .2em; */
+    font-size: 1.9em;
+}
+.fixed .price .true{
+    color: var(--color3);
+    font-size: 1.3em;
+    text-decoration:line-through;
+}.fixed .label{
+    color: rgb(112, 21, 21);
+    /* margin: 1em 2.4em; */
+    /* text-align: center; */
+}
+.fixed .button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fixed a{
+    text-decoration: none;
+}
+.fixed button{
+    width: 100%;
+    align-self: center;
+}
+@media screen and (max-width:1000px){
+    .header-pres {
+        padding: 0;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+    }
+    .header-pres .banner{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+    .header-pres .banner img{
+        margin: 1px;
+        width: 98%
+    }
+    .header-pres .heading{
+        margin: 0;
+        width: 100%;
+    }
+    .header-pres h1, .header-pres div{
+        width: 90%;
+        margin: 5%;
+        /* border: solid; */
+    }
+    .section-pres .obj{
+        margin: 5%;
+        padding: 1em;
+        width: 90%;
+        border: solid;
+        border: solid 1px;
+    }
+    .header-pres button{
+        margin-left: 1em;
+    }
+    .section-pres .intro, .section-pres .foot{
+        width: 100%;
+        /* border: solid; */
+    }
+    .fixed{
+        height: 10vh;
+        padding: 0;
+        margin: 0;
+        top: unset;
+        width: 100%;
+        bottom: 0;
+        /* display: none; */
+        right: 0;
+        flex-direction: row;
+        align-items: center;
+    }
+    .fixed .price{
+        width: 40%;
+        font-size:1em;
+    }
+    .fixed .price .true{
+        font-size: .6em;
+        display: none;
+    }
+    .fixed .price .reduced{
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .fixed .button{
+        width: 55%;
+        height: 90%;
+    }
+    .fixed .button button{
+        border-radius: 0;
+        height: 100%;
+        font-size: .9em;
+    }
+}

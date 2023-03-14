@@ -1,0 +1,212 @@
+
+.validation{
+    display: flex;
+    height: 100%;
+    /* justify-content: flex-start; */
+    /* border: solid; */
+}
+.validation .details{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    width: 60%;
+    /* border: solid; */
+    overflow: auto;
+    /* align-items: center; */
+    /* border: solid; */
+    /* height: 100%; */
+}
+.validation .resume{
+    width: 40%;
+    background: #cee7d6;
+    /* border: solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* border: solid; */
+    margin: 0;
+    flex-direction: column;
+}
+.validation .mode{
+    /* border: solid; */
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.validation .details{
+    /* font-size: 3em; */
+    margin: 2em 0 0 3em;
+}
+.validation .details h1{
+    font-size: 3em;
+    border-bottom: 1px solid;
+}
+.validation .details .presentation{
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1.5em;
+}
+.validation .details .mode{
+    border-top: 2px solid;
+    margin: 2em 0;
+}
+.validation .details .mode h3{
+    font-size: 1.5em;
+}
+.validation .details .pay-box{
+    width: 80%;
+    border: solid 1px var(--color1);
+    margin: 2em 0;
+    /* border-radius: .6em; */
+}
+.validation .details .pay-box .head-paiment{
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /* border-radius: .6em; */
+    border-bottom: 1px solid;
+    align-items: center;
+    padding: .1em 2em;
+    background-color: var(--color1);
+    font-family: poppins;
+    /* border: #fff solid 2px; */
+}
+.validation .details .pay-box .head-paiment label{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.validation .details .pay-box .head-paiment input{
+    margin-right: 2em;
+}
+.validation .details .pay-box .body-pay{
+    background: var(--color4);
+    padding: 2em 1em;
+}
+
+.validation .resume .box{
+    /* display: flex; */
+    /* border: solid; */
+    width: 60%;   
+}
+.validation .resume .box h3{
+    font-size: 2em;
+}
+.validation .resume .box .in{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+    font-size: 1.3em;
+}
+.validation .resume .box .in .label{ 
+    font-weight: 800;
+}
+.validation .resume .box .in.total{
+    border-top: solid 2px;
+}
+.validation .resume .box button{
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: var(--color1);
+    border: unset;
+    border-radius: .2em;
+    padding: .4em;
+}
+.validation .resume .code{
+    margin: 2em 0;
+    /* border: solid; */
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.validation .resume .code label{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.validation .resume .code input{
+    height: 2em;
+    width: 65%;
+    border-radius: .4em;
+    border: 1px solid;
+    outline: unset;
+}
+.validation .details::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+.validation .details::-webkit-scrollbar-track{
+    background: #fff7f7;
+  }
+  
+  /* Handle */
+.validation .details::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+.validation .details::-webkit-scrollbar-thumb:hover {
+    background: rgb(197, 196, 196);
+  }
+@media screen and (max-width:1000px){
+    .validation{
+        display: block;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .validation .details{
+        width: 100%;
+        margin: 1em;
+        overflow: hidden;
+    }
+    .validation .details .pay-box .head-paiment{
+        justify-content: space-between;
+        padding:0 1em;
+    }
+    .validation .details .pay-box .head-paiment label{
+        display: none;
+    }
+    .validation .resume{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 20vh;
+        flex-direction: column-reverse;
+        padding: .1em;
+    }
+    .validation .resume .box{
+        /* border: solid; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .validation .resume h3{
+        display: none;
+    }
+    .validation .resume .box .reduce, 
+    .validation .resume .box .true
+    {
+        display: none;
+    }
+    .validation .resume .box .in.total{
+        border: unset;
+    }
+    .validation .resume  a{
+        width: 50%;
+        /* display: none; */
+    }
+    .validation .resume .code{
+        margin: 0;
+        width: 100%;
+        margin-top: 1em;
+    }
+}

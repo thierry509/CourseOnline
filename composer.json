@@ -1,0 +1,19 @@
+{
+    "name": "thierry/course",
+    "autoload": {
+        "psr-4": {
+            "Thierry\\Course\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "thierry509"
+        }
+    ],
+    "require": {
+        "altorouter/altorouter": "1.2.0",
+        "symfony/var-dumper": "^5.4",
+        "twig/twig": "^3.5",
+        "intervention/image": "^2.7"
+    }
+}

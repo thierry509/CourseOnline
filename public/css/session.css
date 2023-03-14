@@ -1,0 +1,196 @@
+.header{
+    width: 100%;
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    position: fixed;
+    z-index: 2;
+    box-shadow: #888 2px 2px 7px;
+}
+.header .right{
+    cursor: pointer;
+    margin: 0 .3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .right em{
+    /* margin: 0 1em; */
+}
+.header .right img{
+    border-radius: 50%;
+}
+.header .back{
+    box-sizing: border-box;
+    height: 100%;
+    border-right: var(--color4) solid 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    margin-right: 1em;
+    
+}
+.header i{
+    font-size: 2em;
+}
+
+.section_course{
+    top: 8vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    height: 92vh;
+}
+.section_course .content::-webkit-scrollbar, .right .menu::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+.section_course .content::-webkit-scrollbar-track, .right .menu::-webkit-scrollbar-track{
+    background: #fff7f7;
+  }
+  
+  /* Handle */
+.section_course .content::-webkit-scrollbar-thumb, .right .menu::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+.section_course .content::-webkit-scrollbar-thumb:hover, .right .menu::-webkit-scrollbar-thumb:hover {
+    background: rgb(197, 196, 196);
+  }
+.section_course .content{
+    width: 75%;
+    padding: 0 1.5em;
+    overflow: auto;
+    position: relative;
+}
+.section_course .content .video{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.section_course .content .video video{
+    margin: 2em 0;
+    width: 70%;
+}
+.section_course .content .chap{
+    text-align: justify;
+    /* padding: 1.5em; */
+}
+.section_course .content .chap h1{
+    color: var(--color1);
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: .4em;
+}
+.section_course .content .chap h2{
+    font-size: 1.3em;
+    font-weight: 800;
+    letter-spacing: .2em;
+    color: var(--color3);
+}
+.section_course .content .chap p{
+    font-size: 1;
+}
+.section_course .right{
+    position: relative;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+.right .menu{
+    /* position: absolute; */
+    background: var(--bg2);
+    height: 70vh;
+    border-radius: 1em;
+    width: 90%;
+    margin: 5em 2em;
+    padding: 1em;
+    overflow: auto;
+}
+.right .menu h2{
+    font-size: 2em;
+}
+.right .menu li{
+    width: 100%;
+    background-color: var(--color2);
+    margin: 1em .2em;
+    border-radius: .8em;
+    padding: .5em .3em;
+    list-style: none;
+    cursor: pointer;
+}
+.right .menu li:hover{
+    background: linear-gradient(90deg, rgba(72,183,117,1) 13%, rgba(84,84,84,1) 94%);;
+}
+.right .menu::-webkit-scrollbar {
+    width: 5px;
+  }
+.right .foot{
+    /* position: relative; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    top: 40%;
+}
+.right .foot button{
+    width: 5em;
+    background-color: var(--color1);
+    border: var(--color1) solid;
+    border-radius: .4em;
+    color: var(--color2);
+}
+@media screen and (max-width:1000px){
+    .section_course{
+        flex-direction: column;
+    }
+    .header h1{
+        font-size: .9em;
+        width: 8em;
+    }
+    .header button{
+        width: 6em;
+        font-size: .7em;
+    }
+    .header .user{
+        padding: 0;
+    }
+    .section_course .content{
+        width: 100%;
+    }
+    .menu{
+        display: none;
+    }
+    .section_course .content .chap h1{
+        font-size: 1.5em;
+    }
+    .section_course .content .chap h2{
+        font-size: 1em;
+    }
+    .section_course .content .chap p{
+        font-size: .7em;
+    }
+    .section_course .right{
+        background-color: var(--color2);
+        flex-direction: column;
+        width: 100%;
+        height: 2em;
+    }
+    .right .foot{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
