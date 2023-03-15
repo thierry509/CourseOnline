@@ -1,10 +1,5 @@
 <?php
 require '../vendor/autoload.php';
-define('HOST', 'localhost');
-define('USER', 'root');
-define('PASSWORD', 'Haiti204');
-define("DATABASE", 'course_online');
-
 function getIp(){
     if(!empty($_SERVER['HTTP_CLIENT_IP'])){
       $ip = $_SERVER['HTTP_CLIENT_IP'];
